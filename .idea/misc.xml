@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/drawable/ic_baseline_arrow_back_24_2.xml" value="0.1915" />
         <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/drawable/ic_baseline_vpn_key_24.xml" value="0.1915" />
         <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/drawable/layer_login.xml" value="0.1915" />
         <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/drawable/user_pass.xml" value="0.1915" />
         <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/layout/activity_sign_in.xml" value="0.13114754098360656" />
+        <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
       </map>
     </option>
   </component>
