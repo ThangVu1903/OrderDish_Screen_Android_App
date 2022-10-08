@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailListItem"
+    android:orientation="vertical"
+    android:background="#4CAF50">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/backtolist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_241"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/mon_1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:text="CƠM GÀ VÍP"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:text="Ngon như cơm nhà- Chuẩn như cơm Vợ nấu."
+
+            android:textColor="#000000"
+
+            android:textSize="18dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:text="60 000 vnđ"
+
+            android:textColor="#3F51B5"
+
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_star_half_24"
+            android:paddingLeft="40dp"
+            android:text="4,8"
+            android:textColor="#FF1100"
+
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="40dp"
+            android:text="Menu thêm"
+
+            android:textColor="#007BFF"
+
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="50dp"
+            android:text="🌟Cơm ỐpLa 2 trứng#19k"
+
+            android:textColor="#FF1100"
+
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="50dp"
+
+            android:text="🌟Cơm thịt kho trứng#32k"
+            android:textColor="#FF1100"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+
+            android:text="🏡Olusu Coffee và Tea-Cơm Văn Phòng, 230 Nguyễn Trọng Tuyển, Phường 8, Quận Phú Nhuận, Tp.HCM"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+
+            android:text="Cơm Gà Là Chân Ái!
+Nghiện thuốc có thể lào cai
+nhưng nghiện gà không thể nào cai🍗
+Duii hay buồn cứ ăn đi rồi tính⭐️
+Cơm gà sốt tiêu xanh thì say đắm
+Sốt mắm tỏi thì đắm say
+Ăn ngon ngất ngây 😋
+Nhanh tay nhập ngay:"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold|italic"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/violet"
+            app:cornerRadius="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm giỏ hàng"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/violet"
+            app:cornerRadius="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đặt ngay"
+            android:layout_marginLeft="50dp"/>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

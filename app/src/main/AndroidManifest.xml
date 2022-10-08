@@ -14,10 +14,25 @@
         android:theme="@style/Theme.OrderDish"
         tools:targetApi="31">
         <activity
-            android:name=".Sign_up"
+            android:name=".Drawer_base"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".DetailListItem"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".profile_one"
+            android:exported="false" />
+        <activity
+            android:name=".ListDish"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

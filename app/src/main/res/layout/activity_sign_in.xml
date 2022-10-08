@@ -48,12 +48,14 @@
             android:layout_height="match_parent"
             android:layout_below="@+id/layout_acc"
 
-            android:background="@drawable/layer_login"
+
             android:gravity="center"
             android:orientation="vertical">
 
             <EditText
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
                 android:id="@+id/username"
+                android:drawablePadding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
@@ -69,7 +71,9 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:passwordToggleEnabled="true">
+                app:passwordToggleEnabled="true"
+                app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/pass"
@@ -80,7 +84,9 @@
                     android:layout_marginHorizontal="15dp"
                     android:layout_marginTop="30dp"
                     android:inputType="textPassword"
-                    android:hint="Password..."/>
+                    android:hint="Password..."
+
+                   />
 
             </com.google.android.material.textfield.TextInputLayout>
             <CheckBox
@@ -103,7 +109,8 @@
                 android:backgroundTint="#8a56ab"
                 android:text="LOGIN"
                 android:textSize="25dp"
-                app:cornerRadius="40dp" />
+                app:cornerRadius="40dp"
+                />
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnSignUp"
                 android:layout_width="150dp"
