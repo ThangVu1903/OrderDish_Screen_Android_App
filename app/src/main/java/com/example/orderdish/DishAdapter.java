@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,14 +14,32 @@ import androidx.annotation.NonNull;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DishAdapter extends ArrayAdapter<Dish> {
+public class DishAdapter extends BaseAdapter {
     private Context ct;
+    private int layout;
     private ArrayList<Dish> arr;
-    public DishAdapter(@NonNull ListDish context, int resource, @NonNull List<Dish> objects) {
-        super(context, resource, objects);
-        this.ct = context;
-        this.arr = new ArrayList<>(objects);
+
+    public DishAdapter(Context ct, int layout, ArrayList<Dish> arr) {
+        this.ct = ct;
+        this.layout = layout;
+        this.arr = arr;
     }
+
+    @Override
+    public int getCount() {
+        return arr.size() ;
+    }
+
+    @Override
+    public Object getItem(int i) {
+        return null;
+    }
+
+    @Override
+    public long getItemId(int i) {
+        return 0;
+    }
+
     @NonNull
     @Override
     public View getView(int position, @NonNull View convertView, @NonNull ViewGroup parent){

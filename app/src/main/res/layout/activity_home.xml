@@ -49,21 +49,16 @@
         </LinearLayout>
 
 
-        <TextView
-            android:id="@+id/txtViewAcc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
-            android:drawableLeft="@drawable/ic_baseline_account_circle_245" />
+
     </LinearLayout>
 
     <LinearLayout
-        android:paddingHorizontal="7dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/header"
-        android:orientation="vertical">
+        android:orientation="vertical"
+
+        android:paddingHorizontal="7dp">
 
         <EditText
             android:layout_width="match_parent"
@@ -74,154 +69,234 @@
             android:hint="Search...."
 
             android:padding="10dp" />
-
-        <LinearLayout
-            android:layout_marginTop="22dp"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="15dp"
-                    android:text="Ưu đãi cho bạn"
-                    android:textColor="@color/white"
-                    android:textSize="25dp"
-                    android:textStyle="italic" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_baseline_navigate_next_24" />
-            </LinearLayout>
-
+            android:layout_height="wrap_content">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:background="#D4F3AF"
-                android:orientation="horizontal"
-                android:padding="15dp">
+                android:layout_marginTop="22dp"
+                android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/km" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
-                <TextView
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="Ưu đãi cho bạn"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_navigate_next_24" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
-                    android:text="Đi ăn 4 người tính tiền 3 người trong dịp giáng sinh này!!!"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:textStyle="italic|bold" />
-            </LinearLayout>
+                    android:layout_marginTop="1dp"
+                    android:background="#D4F3AF"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/UuDaiChoBanTxt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="15dp"
-                    android:text="Thêm món ăn  >"
-                    android:textColor="@color/white"
-                    android:textSize="25dp"
-                    android:textStyle="italic" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="#D4F3AF"
-                android:orientation="horizontal"
-                android:padding="15dp">
-
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/mon_5" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingLeft="10dp">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/km" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Bánh kẹp kiểu Thái Lan"
-
+                        android:paddingLeft="10dp"
+                        android:text="Đi ăn 4 người tính tiền 3 người trong dịp giáng sinh này!!!"
+                        android:textColor="@color/black"
                         android:textSize="20dp"
                         android:textStyle="italic|bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Thái Lan có những hàng bánh kếp thu hút được rất đông thực khách, không chỉ bởi hương thơm ngào ngạt của trứng, sữa, của thịt...."
-                        android:textColor="#008EFF"
-                        android:textSize="14dp"
-                        android:textStyle="italic" />
                 </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:background="#D4F3AF"
-                android:orientation="horizontal"
-                android:padding="15dp">
-
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/mon_2" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingLeft="10dp">
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Lẩu Hàn Mini"
-
-                        android:textSize="20dp"
-                        android:textStyle="italic|bold" />
-
-                    <TextView
+                        android:id="@+id/UuDaiChoBanTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Món lẩu nóng hổi, vừa thổi vừa ăn sẽ làm bạn giải tỏa cơn thèm bấy lâu nay. Với hương vị đậm đà, thơm ngon...."
-                        android:textColor="#008EFF"
-                        android:textSize="14dp"
+                        android:paddingLeft="15dp"
+                        android:text="Thêm món ăn  >"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
                         android:textStyle="italic" />
+
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#D4F3AF"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mon_5" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bánh kẹp kiểu Thái Lan"
+
+                            android:textSize="20dp"
+                            android:textStyle="italic|bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thái Lan có những hàng bánh kếp thu hút được rất đông thực khách, không chỉ bởi hương thơm ngào ngạt của trứng, sữa, của thịt...."
+                            android:textColor="#008EFF"
+                            android:textSize="14dp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#D4F3AF"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mon_2" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lẩu Hàn Mini"
+
+                            android:textSize="20dp"
+                            android:textStyle="italic|bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Món lẩu nóng hổi, vừa thổi vừa ăn sẽ làm bạn giải tỏa cơn thèm bấy lâu nay. Với hương vị đậm đà, thơm ngon...."
+                            android:textColor="#008EFF"
+                            android:textSize="14dp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#D4F3AF"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mon_2" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lẩu Hàn Mini"
+
+                            android:textSize="20dp"
+                            android:textStyle="italic|bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Món lẩu nóng hổi, vừa thổi vừa ăn sẽ làm bạn giải tỏa cơn thèm bấy lâu nay. Với hương vị đậm đà, thơm ngon...."
+                            android:textColor="#008EFF"
+                            android:textSize="14dp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="#D4F3AF"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mon_2" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lẩu Hàn Mini"
+
+                            android:textSize="20dp"
+                            android:textStyle="italic|bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Món lẩu nóng hổi, vừa thổi vừa ăn sẽ làm bạn giải tỏa cơn thèm bấy lâu nay. Với hương vị đậm đà, thơm ngon...."
+                            android:textColor="#008EFF"
+                            android:textSize="14dp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
             </LinearLayout>
+        </ScrollView>
 
 
-        </LinearLayout>
     </LinearLayout>
 
 

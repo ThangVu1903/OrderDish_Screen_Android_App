@@ -1,12 +1,17 @@
 package com.example.orderdish;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -14,30 +19,25 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class ListDish extends AppCompatActivity {
+public class ListDish extends Fragment {
     ListView lsvDish;
     ArrayList<Dish> arr;
     DishAdapter adapter;
-    TextView back;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_dish);
-        back = findViewById(R.id.bactohome);
 
-        lsvDish = findViewById(R.id.lsvDish);
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View v = inflater.inflate(R.layout.activity_list_dish,container,false);
+
+
+        lsvDish = v.findViewById(R.id.lsvDish);
         lsvDish.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                startActivity(new Intent(ListDish.this,DetailListItem.class));
+                startActivity(new Intent(getContext(),DetailListItem.class));
             }
         });
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(ListDish.this,Home.class));
-            }
-        });
+
         arr = new ArrayList<>();
 
         Random r = new Random();
@@ -54,8 +54,15 @@ public class ListDish extends AppCompatActivity {
         arr.add(new Dish(R.drawable.mon_4,r.nextInt(10)*2,"Lẩu"));
 
 
-        adapter = new DishAdapter(this,0,arr);
+        adapter = new DishAdapter(getContext(),0,arr);
         lsvDish.setAdapter(adapter);
+
+
+
+
+        return v;
     }
 
+
 }
+

@@ -60,7 +60,7 @@ public class SignIn extends AppCompatActivity {
                         if (userName.equals("thang") && pass.equals("thang")){
                             Toast.makeText(SignIn.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
 
-                                   startActivity(new Intent(SignIn.this, Home.class));
+                                   startActivity(new Intent(SignIn.this, navigation_home.class));
 
                             if (cbRemember.isChecked()){
                                 SharedPreferences.Editor editor = shPre.edit();
