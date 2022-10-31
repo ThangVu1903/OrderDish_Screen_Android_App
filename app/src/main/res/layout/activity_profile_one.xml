@@ -31,7 +31,7 @@
                         android:id="@+id/backLogin"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-
+                        android:layout_marginLeft="330dp"
                         android:drawableLeft="@drawable/ic_baseline_login_24"
                         android:padding="10dp" />
                 </LinearLayout>

@@ -1,6 +1,8 @@
 package com.example.orderdish;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,8 +19,13 @@ public class DetailListItem extends AppCompatActivity {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(DetailListItem.this,ListDish.class));
+                BackListDish();
             }
         });
+
+    }
+    public void BackListDish(){
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+
     }
 }

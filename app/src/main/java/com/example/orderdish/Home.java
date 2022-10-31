@@ -18,13 +18,13 @@ import android.widget.TextView;
 public class Home extends Fragment {
 
 
-
+    TextView txtThemMon ;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.activity_home,container,false);
 
-
+        txtThemMon = v.findViewById(R.id.UuDaiChoBanTxt);
 
 
 

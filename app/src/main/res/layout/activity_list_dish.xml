@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignIn">
+
     <ImageView
         android:id="@+id/imgTOp"
-
+        android:background="#958B3A"
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        android:src="@drawable/dish_lisst"
-        android:layout_marginBottom="15dp"/>
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/dish_lisst" />
     <LinearLayout
         android:id="@+id/bgr"
 
