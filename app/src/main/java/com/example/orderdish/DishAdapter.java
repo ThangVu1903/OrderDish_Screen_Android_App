@@ -1,18 +1,21 @@
 package com.example.orderdish;
 
 import android.content.Context;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
+import com.bumptech.glide.Glide;
+import com.example.orderdish.model.Dish;
+
+
 import java.util.ArrayList;
-import java.util.List;
 
 public class DishAdapter extends BaseAdapter {
     private Context ct;
@@ -42,10 +45,13 @@ public class DishAdapter extends BaseAdapter {
 
     @NonNull
     @Override
-    public View getView(int position, @NonNull View convertView, @NonNull ViewGroup parent){
+    public View getView(int position,View convertView, @NonNull ViewGroup parent) {
+
         if (convertView == null){
             LayoutInflater i = (LayoutInflater)ct.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = i.inflate(R.layout.sub_item_list,null );
+            convertView = i.inflate(layout,null );
+        }else {
+
         }
         if(arr.size()>0) {
             Dish d = arr.get(position);
@@ -53,11 +59,11 @@ public class DishAdapter extends BaseAdapter {
             TextView txvNameDish = convertView.findViewById(R.id.txvNameDish);
             TextView txvNumItem = convertView.findViewById(R.id.txvNumItem);
 
-            imageDish.setImageResource(d.image);
-            txvNameDish.setText(d.name);
-            txvNumItem.setText(d.numItem+"Items");
+            Glide.with(ct).load(d.anh).into(imageDish);
+            txvNameDish.setText(d.tenMon);
+            txvNumItem.setText(d.giaTien);
         }
             return  convertView;
-    }
 
+    }
 }

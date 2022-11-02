@@ -37,14 +37,7 @@ public class navigation_home extends AppCompatActivity {
                         selectedFragment= new ListDish();
 
                         break;
-//                    case R.id.nav_music_remix:
-//                        selectedFragment= new FragmentMusicRemix();
-//
-//                        break;
-//                    case R.id.nav_category:
-//                        selectedFragment= new FragmentCategory();
-//
-//                        break;
+
                     case R.id.nav_profile:
                         selectedFragment= new profile_one();
 

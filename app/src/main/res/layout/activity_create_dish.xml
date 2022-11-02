@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateDish"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#958B3A"
+      >
+        <TextView
+            android:id="@+id/backToListOne"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_241"
+
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:padding="20dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm Món Ăn"
+            android:textSize="30dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/nameDishCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+            android:hint="Nhập Tên Món Ăn..."
+            android:padding="20dp"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/thongTinDishCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+            android:hint="Thông tin..."
+            android:padding="20dp"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/giaTienDishCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+            android:hint="Giá Tiền(vnđ)..."
+            android:padding="20dp"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/diaChiDishCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+
+            android:hint="Nhập Địa Chỉ Quán ..."
+            android:padding="20dp"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/monAnThemDishCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+            android:hint="Món Ăn Đi Kèm..."
+            android:padding="20dp"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <TextView
+            android:id="@+id/addAnh"
+            android:layout_width="wrap_content"
+            android:drawableLeft="@drawable/attract"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="20dp"
+            android:textColor="#000000"
+
+            />
+        <ImageView
+            android:id="@+id/imageViewAdd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCreteDish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#958B3A"
+        android:text="Thêm Ngay"
+
+        android:textSize="25dp"
+        app:cornerRadius="40dp"
+        />
+
+</LinearLayout>

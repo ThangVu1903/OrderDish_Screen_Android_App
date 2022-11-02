@@ -32,8 +32,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="2dp"
                 android:layout_marginBottom="3dp"
-                android:src="@drawable/bg_dish"
-                />
+                android:src="@drawable/bg_dish" />
 
         </RelativeLayout>
 
@@ -41,6 +40,7 @@
             android:id="@+id/imgDish"
             android:layout_width="120dp"
             android:layout_height="match_parent"
+            android:background="@drawable/createdish"
             android:padding="15dp"
             android:src="@drawable/mon_1" />
 
@@ -75,7 +75,7 @@
         </RelativeLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="120dp"
             android:orientation="vertical">
@@ -91,7 +91,7 @@
                 android:text="Pizza"
                 android:textAllCaps="true"
                 android:textColor="#000"
-                android:textSize="30sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/txvNumItem"
@@ -100,7 +100,7 @@
                 android:layout_weight="1"
                 android:text="30 items"
                 android:textColor="#4C4B4B"
-                android:textSize="18dp" />
+                android:textSize="15dp" />
         </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>

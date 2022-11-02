@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateDish"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/violet"
+        >
+        <TextView
+            android:id="@+id/backToProfile"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_241"
+
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:padding="20dp"
+            android:layout_marginLeft="60dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textSize="30dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/nameProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+
+            android:padding="20dp"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/adressProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+
+            android:padding="20dp"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:layout_marginRight="17dp"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/emailProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+
+            android:padding="20dp"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: "
+            android:textSize="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/phoneProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+
+
+            android:padding="20dp"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D.O.B: "
+            android:textSize="20dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/msvProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+
+            android:padding="20dp"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Majors: "
+            android:textSize="20dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/majorsProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+
+            android:padding="20dp"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#958B3A"
+        android:text="Update"
+
+        android:textSize="25dp"
+        app:cornerRadius="40dp"
+        />
+
+</LinearLayout>

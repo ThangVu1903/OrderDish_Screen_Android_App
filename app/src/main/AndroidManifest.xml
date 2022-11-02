@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.orderdish">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -15,20 +17,20 @@
         android:theme="@style/Theme.OrderDish"
         tools:targetApi="31">
         <activity
-            android:name=".navigation_home"
+            android:name=".Edit_My_Profile"
             android:exported="false" />
         <activity
-            android:name=".Drawer_base"
+            android:name=".CreateDish"
+            android:exported="true"></activity>
+        <activity
+            android:name=".navigation_home"
             android:exported="false" />
         <activity
             android:name=".DetailListItem"
             android:exported="false" />
-
         <activity
             android:name=".SignUp"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".SignIn"
             android:exported="true">
@@ -37,7 +39,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 

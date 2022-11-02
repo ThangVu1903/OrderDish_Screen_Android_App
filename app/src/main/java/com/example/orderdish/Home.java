@@ -5,6 +5,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -25,6 +27,13 @@ public class Home extends Fragment {
         View v = inflater.inflate(R.layout.activity_home,container,false);
 
         txtThemMon = v.findViewById(R.id.UuDaiChoBanTxt);
+        txtThemMon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+            }
+        });
 
 
 
