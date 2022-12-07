@@ -35,7 +35,7 @@ public class SignIn extends AppCompatActivity {
         setContentView(R.layout.activity_sign_in);
         Anhxa();
         shPre = getSharedPreferences("dataLogin",MODE_PRIVATE);
-         //lấy giá trị
+        //lấy giá trị
         PhoneNumber.setText(shPre.getString("taiKhoan",""));
         edtPass.setText(shPre.getString("matKhau",""));
         cbRemember.setChecked(shPre.getBoolean("checked",false));
@@ -100,7 +100,7 @@ public class SignIn extends AppCompatActivity {
                 }
 
             }
-            });
+        });
 
 
 //                db.addValueEventListener(new ValueEventListener() {
@@ -116,7 +116,7 @@ public class SignIn extends AppCompatActivity {
 //                            Toast.makeText(SignIn.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
 //                        }
 //                            mDialog.dismiss();
-                // get user info
+        // get user info
 //                           User user = snapshot.child(edtUsername.getText().toString()).getValue(User.class);
 //                            if(user.getPassword().equals(edtPass.getText().toString())){
 //                                Toast.makeText(SignIn.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
@@ -146,7 +146,7 @@ public class SignIn extends AppCompatActivity {
 //                        }
 
 
-            }
+    }
 
 //                    @Override
 //                    public void onCancelled(@NonNull DatabaseError error) {
@@ -157,51 +157,51 @@ public class SignIn extends AppCompatActivity {
 //        });
 
 
-            //  }
+    //  }
 
-            public void Anhxa() {
-                login = findViewById(R.id.btnLogin);
-                PhoneNumber = findViewById(R.id.PhoneNumber);
-                edtPass = findViewById(R.id.pass);
-                cbRemember = findViewById(R.id.checkRemember);
-                btnSignUp = findViewById(R.id.btnSignUp);
-            }
+    public void Anhxa() {
+        login = findViewById(R.id.btnLogin);
+        PhoneNumber = findViewById(R.id.PhoneNumber);
+        edtPass = findViewById(R.id.pass);
+        cbRemember = findViewById(R.id.checkRemember);
+        btnSignUp = findViewById(R.id.btnSignUp);
+    }
 
-            public void BtnLogin() {
+    public void BtnLogin() {
 
-                login.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        String phone = PhoneNumber.getText().toString().trim();
-                        String pass = edtPass.getText().toString().trim();
-
-
-                        if (phone.equals("thang") && pass.equals("thang")) {
-                            Toast.makeText(SignIn.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-
-                            startActivity(new Intent(SignIn.this, navigation_home.class));
-
-                            if (cbRemember.isChecked()) {
-                                SharedPreferences.Editor editor = shPre.edit();
-                                editor.putString("taiKhoan", phone);
-                                editor.putString("matKhau", pass);
-                                editor.putBoolean("checked", true);
-                                editor.commit();
-                            } else {
-                                SharedPreferences.Editor editor = shPre.edit();
-                                editor.remove("taiKhoan");
-                                editor.remove("matKhau");
-                                editor.remove("checked");
-                                editor.commit();
-                            }
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String phone = PhoneNumber.getText().toString().trim();
+                String pass = edtPass.getText().toString().trim();
 
 
-                        } else {
-                            Toast.makeText(SignIn.this, "Đăng nhập thất bại", Toast.LENGTH_SHORT).show();
-                        }
+                if (phone.equals("thang") && pass.equals("thang")) {
+                    Toast.makeText(SignIn.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
+
+                    startActivity(new Intent(SignIn.this, navigation_home.class));
+
+                    if (cbRemember.isChecked()) {
+                        SharedPreferences.Editor editor = shPre.edit();
+                        editor.putString("taiKhoan", phone);
+                        editor.putString("matKhau", pass);
+                        editor.putBoolean("checked", true);
+                        editor.commit();
+                    } else {
+                        SharedPreferences.Editor editor = shPre.edit();
+                        editor.remove("taiKhoan");
+                        editor.remove("matKhau");
+                        editor.remove("checked");
+                        editor.commit();
                     }
-                });
+
+
+                } else {
+                    Toast.makeText(SignIn.this, "Đăng nhập thất bại", Toast.LENGTH_SHORT).show();
+                }
             }
+        });
+    }
 
 
-        }
+}

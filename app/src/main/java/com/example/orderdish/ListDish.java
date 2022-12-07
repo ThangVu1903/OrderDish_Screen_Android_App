@@ -44,18 +44,18 @@ public class ListDish extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.activity_list_dish, container, false);
         createTxt = v.findViewById(R.id.createDish);
-        createTxt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getContext(), CreateDish.class));
-            }
-        });
+            createTxt.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(getContext(), CreateDish.class));
+                }
+            });
         databaseReference = FirebaseDatabase.getInstance().getReference("monan");
         lsvDish = v.findViewById(R.id.lsvDish);
 
         arr = new ArrayList<>();
 
-        adapter = new DishAdapter(getContext(), R.layout.sub_item_list, arr);
+            adapter = new DishAdapter(getContext(), R.layout.sub_item_list, arr);
         lsvDish.setAdapter(adapter);
 
         databaseReference.addChildEventListener(new ChildEventListener() {
