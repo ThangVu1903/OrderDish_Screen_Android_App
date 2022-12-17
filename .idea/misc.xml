@@ -23,7 +23,7 @@
         <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/font/font_dish.xml" value="0.18783783783783783" />
         <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/font/oder_foot.xml" value="0.18528428093645485" />
         <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/layout/activity_create_dish.xml" value="0.16" />
-        <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/layout/activity_detail_list_item.xml" value="0.2" />
+        <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/layout/activity_detail_list_item.xml" value="0.136" />
         <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/layout/activity_drawer_base.xml" value="0.16824324324324325" />
         <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/layout/activity_drawer_base_adapter.xml" value="0.16824324324324325" />
         <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/layout/activity_edit_my_profile.xml" value="0.264" />
@@ -31,7 +31,8 @@
         <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/layout/activity_list_dish.xml" value="0.176" />
         <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/layout/activity_navigation_home.xml" value="0.14054054054054055" />
-        <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/layout/activity_profile_one.xml" value="0.2" />
+        <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/layout/activity_order.xml" value="0.152" />
+        <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/layout/activity_profile_one.xml" value="0.152" />
         <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/layout/activity_sign_in.xml" value="0.13114754098360656" />
         <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
         <entry key="..\:/THANG/Dai_hoc/Nam_3/Hk1/LapTrinhMobile/OrderDish/app/src/main/res/layout/content_layout.xml" value="0.16824324324324325" />

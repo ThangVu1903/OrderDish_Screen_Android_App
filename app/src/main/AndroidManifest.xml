@@ -4,7 +4,7 @@
     package="com.example.orderdish">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -17,11 +17,14 @@
         android:theme="@style/Theme.OrderDish"
         tools:targetApi="31">
         <activity
+            android:name=".order"
+            android:exported="false" />
+        <activity
             android:name=".Edit_My_Profile"
             android:exported="false" />
         <activity
             android:name=".CreateDish"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".navigation_home"
             android:exported="false" />

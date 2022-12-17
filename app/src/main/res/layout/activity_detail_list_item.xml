@@ -28,11 +28,11 @@
     </RelativeLayout>
 
     <ScrollView
-        android:background="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/nav_bot"
-        android:layout_below="@id/header_detail">
+        android:layout_below="@id/header_detail"
+        android:background="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -159,7 +159,7 @@ Nhanh tay nhập ngay:"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="40dp"
             android:backgroundTint="@color/violet"
             android:text="Thêm giỏ hàng"
             app:cornerRadius="20dp" />
@@ -167,8 +167,8 @@ Nhanh tay nhập ngay:"
         <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="40dp"
             android:backgroundTint="@color/violet"
             android:text="Đặt ngay"
             app:cornerRadius="20dp" />
